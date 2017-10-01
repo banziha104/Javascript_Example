@@ -74,12 +74,20 @@
 
 /*짧은 조건문*/
 
+//
+// function test(a,b,c) {
+//     b = b || 52;
+//     c = c || 273;
+//
+//     console.log(a + "/" + b + "/" + c)
+// }
+//
+// test(1,2);
 
 function test(a,b,c) {
-    b = b || 52;
-    c = c || 273;
-
-    console.log(a + "/" + b + "/" + c)
+    console.log(a);
+    console.log(a * b);
+    console.log(a * b * c);
 }
 
-test(1,2);
+test(1,10);
