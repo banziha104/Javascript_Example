@@ -83,11 +83,21 @@
 // }
 //
 // test(1,2);
+//
+// function test(a,b,c) {
+//     console.log(a);
+//     console.log(a * b);
+//     console.log(a * b * c);
+// }
+//
+// test(1,10);
 
-function test(a,b,c) {
-    console.log(a);
-    console.log(a * b);
-    console.log(a * b * c);
+var obj = {
+    name : 'lee',
+    age : '26',
+    goLib : function(where) {
+        console.log(this.name + where + "going");
+    }
 }
 
-test(1,10);
+console.log('age' in obj);
