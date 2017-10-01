@@ -91,13 +91,25 @@
 // }
 //
 // test(1,10);
+//
+// var obj = {
+//     name : 'lee',
+//     age : '26',
+//     goLib : function(where) {
+//         console.log(this.name + where + "going");
+//     }
+// }
+//
+// console.log('age' in obj);
 
-var obj = {
-    name : 'lee',
-    age : '26',
-    goLib : function(where) {
-        console.log(this.name + where + "going");
+class A{
+    _name = 1;
+
+    get name() {
+        return this._name;
+    }
+
+    set name(value) {
+        this._name = value;
     }
 }
-
-console.log('age' in obj);

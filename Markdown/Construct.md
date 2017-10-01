@@ -47,3 +47,30 @@ function Student(name,lang) {
 }
 ```
 
+<br/>
+
+---
+# 상속
+
+```javascript
+function Rect(w,h) {
+  var width = w;
+  var height = h;
+  
+  this.getWidth = function() {
+    return this.width;
+  }
+  this.setHeight = function() {
+    return this.height;
+  }
+}
+
+function Square(length) {
+  this.base = Rect;             //
+  this.base(length,length);
+}
+
+Square.prototype = Rect.prototype;
+Square.prototype.constructor = Square;
+```
+
