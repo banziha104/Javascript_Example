@@ -54,10 +54,32 @@
 //
 // callTenTimes(callback);
 
-function returnFunction() {
-    return function () {
-        console.log("호출");
-    };
+/*함수를 리턴하는 함수*/
+// function returnFunction() {
+//     return function () {
+//         console.log("호출");
+//     };
+// }
+//
+// returnFunction();
+//
+// function test(name) {
+//     var output = 'Hello' + name;
+//     return function() {
+//         alert(output);
+//     }
+// }
+//
+// test("Lee Young Joon");
+
+/*짧은 조건문*/
+
+
+function test(a,b,c) {
+    b = b || 52;
+    c = c || 273;
+
+    console.log(a + "/" + b + "/" + c)
 }
 
-returnFunction();
+test(1,2);

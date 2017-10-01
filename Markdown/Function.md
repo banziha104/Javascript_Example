@@ -101,3 +101,90 @@ returnFunction();
 
 ---
 # 클로저
+
+```javascript
+function test(name) {
+  var output = 'Hello' +name;
+}
+
+console.log(output); //output은 함수 스코프에서 소멸됨. 이 경우 클로저가 필요함
+```
+
+클로저
+```javascript
+function test(name) {
+    var output = 'Hello' + name;
+    return function() {
+        alert(output);
+    }
+}
+
+test("Lee Young Joon");
+```
+
+# 자바스크립트 실행 순서
+
+```javascript
+/*3,3,3이 출력됨. 함수를 호출하는 시점이 반복문이 모두 끝난 이후이기 때문*/
+for (var i = 0 ; i < 3 ; i ++){
+    setTimeout(function() {
+      console.log(i);
+    },0);
+}
+```
+클로저를 활용한 해결
+```javascript
+    for(var i = 0 ; i <3 ; i++){
+        (function(closed_i) {
+          setTimeout(function() {
+            console.log(closed_i);
+          },0);
+        })(i);
+    }
+```
+
+---
+# 기본 매개변수
+
+```javascript
+function test(a,b=52,c=352) {
+  console.log(a+b+c+""); 
+}
+
+test(1); // 값을 넣지 않는 경우, 1 52 352이 출력 
+```
+
+---
+# 짧은 조건문을 활용한 매개변수
+
+```javascript
+function test(a,b,c) {
+  b = b || 52;
+  c = c || 273;
+  
+  console.log(a + "/" + b + "/" + c) 
+}
+
+test(1,2) // 1은 참, b도 참이기 때문에 1/2 후 c가 undefined이기 때문에 273이 실행;
+
+```
+
+---
+# 화살표 함수 
+
+<li> 조건 1 : 프로토타입을 사용하지 않고 ECMAScript 6에서 추가 된 클래스를 사용할 때
+<li> 조건 : jQuery 문서 객체 조작에서 this 키워드가 아니라, event.currentTarget을 사용할 때
+
+```javascript
+const mutiply = (a,b) => a*b;
+```
+
+# 가변 매개 함수
+
+```javascript
+function test(...number) {
+  console.log(number[0]);
+  console.log(number[1]);
+  console.log(number[2]);
+}
+```
