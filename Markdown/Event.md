@@ -68,8 +68,11 @@ window.onload = function() {
 <li> 인라인 모델
 
 ```html
-<form onsubmit="return whenSubmit()"> <!--return 함수()를 입력하면 디폴트 이벤트 제거-->
+<form onsubmit="return whenSubmit()"> <!--return 함수()를 입력하면 디폴트 이벤트 제-->
 
 </form> 
 ```
+
+# 이벤트 전달
+
 
