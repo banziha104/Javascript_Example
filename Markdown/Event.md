@@ -73,6 +73,56 @@ window.onload = function() {
 </form> 
 ```
 
+<br/>
+
+---
+
 # 이벤트 전달
 
+```javascript
 
+document.getElementById('paragraph').onclick = function(e) {
+    var evnet = e || window.event;
+    
+    alert('paragraph');
+    
+    event.cancelBubble = true; //이벤트 전달을 제거, 익스플로어의 경우
+    
+    if(event.stopPropagation){ //익스플로어의 경우 stopPropagation이 없음으로 조건문으로 처리
+        event.stopPropagation(); // 그 외의 경우 
+    }
+}
+```
+
+<br/>
+
+---
+
+# 인터넷 익스플로러 이벤트 모델
+
+```javascript
+window.attachEvent('onload',function() {//이벤트 연결
+  
+});
+
+window.detachEvent('onclick',handler);
+
+```
+
+<br/>
+
+---
+
+# 표준 이벤트 모델
+
+```javascript
+window.onload = function() {
+  var header = document.getElementById('my-header');
+  
+  header.addEventListener('click',function() {
+    
+  }); // 이벤트 연결
+}
+
+window.removeEventListener('click',handler);
+```
