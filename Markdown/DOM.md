@@ -1,7 +1,7 @@
 # 텍스트 노드를 가지는 문서 객체 생성
 
 <li> createElment(tagName) : 요소 노드를 생성
-<li> createTextNode(text)   : 텍스트 도르르 생성
+<li> createTextNode(text)   : 텍스트 노드를 생성
 <li> appendChild(node) : 객체에 노드를 연결함
 
 ```javascript

@@ -102,6 +102,7 @@
 //
 // console.log('age' in obj);
 
+
 class A{
     _name = 1;
 
