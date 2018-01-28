@@ -103,14 +103,8 @@
 // console.log('age' in obj);
 
 
-class A{
-    _name = 1;
-
-    get name() {
-        return this._name;
-    }
-
-    set name(value) {
-        this._name = value;
-    }
+function f(x) {
+    return `in f:x = ${x}`;
 }
+
+console.log(f(10));
