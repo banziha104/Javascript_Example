@@ -112,3 +112,11 @@ console.log(f(10));
 bkdksks = 20;
 console.log(bkdksks);
 
+bc = {
+    d : 20,
+    e : 10,
+};
+let {d, e} = bc;
+
+console.log(d);
+console.log(e);
