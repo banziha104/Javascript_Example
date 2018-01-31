@@ -1,5 +1,4 @@
-let x = "3"+3
-let y = "3"-3
-let z = "3"*3
-console.log(`${x} / ${y} / ${z}`);
+let a = 0.1;
+let b = Number.isInteger(0.2);
 
+console.log( b );
