@@ -33,6 +33,8 @@ if (!Number.isNaN){
       return n !== n // NaN은 자신과도 맞지 않는 유일한 개체임을 이용함
     }
 }
+
+
 ```
  
 
