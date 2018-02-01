@@ -31,8 +31,8 @@
     
     ```
     
-    - 똒똒해
+    - * -> 불리언 
+    - ! 부정연산자는 truthy, falsy 까지 바뀐다
     
-    ```javascript
-    dsfasdf
-    ```
+- 암시적 강제변환
+    

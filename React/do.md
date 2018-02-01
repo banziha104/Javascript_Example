@@ -1,0 +1,12 @@
+- 비구조화 할당
+- HOC
+- Axios
+- ES6
+- class
+- async await 
+- Promise
+- export default
+- 클로저
+- this 바인딩
+- Router
+    - react-router
