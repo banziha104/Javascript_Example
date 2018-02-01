@@ -20,5 +20,19 @@
     - 문자열 & 숫자 
     
     ```javascript
-sdsfdfsda
-```
+    
+    var a = 42
+    var b = String(a);
+    var c = a.toString();
+    
+    var e = "3.14";
+    var f = Number(c);
+    var h = +e;
+    
+    ```
+    
+    - 똒똒해
+    
+    ```javascript
+    dsfasdf
+    ```
