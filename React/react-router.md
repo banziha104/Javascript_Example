@@ -33,7 +33,7 @@ export default App;
 - 기타 기술
     - Switch : 매칭된 첫번째 라우트만 보여줌
     
-1. 쿼리 파싱하기
+3. 쿼리 파싱하기
 
 ```javascript
 import React from 'react';
@@ -81,15 +81,20 @@ export default About;
         
     ```javascript
     import React from 'react';
-    import {Link} from 'react-router-dom';
+    import {NavLink} from 'react-router-dom';
     
     const Menu = () => {
+        const activateStyle = {
+            color : 'green',
+            fontSize : '2rem'
+        };
+    
         return (
             <div>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/about/foo">About foo</Link></li>
+                    <li><NavLink exact to="/" activeStyle={activateStyle}>Home</NavLink></li>
+                    <li><NavLink exact to="/about" activeStyle={activateStyle}>About</NavLink></li>
+                    <li><NavLink to="/about/foo" activeStyle={activateStyle}>About foo</NavLink></li>
                 </ul>
             </div>
         );
@@ -97,3 +102,9 @@ export default About;
     
     export default Menu;
 ```
+
+4. 중첩 라우트
+
+
+
+    
