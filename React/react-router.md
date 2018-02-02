@@ -73,7 +73,7 @@ export default About;
     };
     
     export default Menu;
-```
+    ```
     
     - NavLink 컴포넌트 : URL이 활성화 되면 특정 스타일 혹은 클래스를 지정가능 
         - 스타일 지정 activeStyle
